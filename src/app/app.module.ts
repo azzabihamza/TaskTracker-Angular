@@ -5,12 +5,16 @@ import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component';
+import { ButtonComponent } from './components/button/button.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    HeaderComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
