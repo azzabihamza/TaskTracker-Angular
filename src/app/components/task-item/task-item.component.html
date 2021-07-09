@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-body">
-    <fa-icon class="icon" [ngStyle]="{'color':'red'}" [icon]="faTimes"></fa-icon>
+    <fa-icon class="icon" (click)="onDelete(task)" [ngStyle]="{'color':'red'}" [icon]="faTimes"></fa-icon>
     <h4 class="card-title">{{ task.text }}</h4>
     <h6 class="card-subtitle mb-2 text-muted">Id : {{ task.id }}</h6>
   </div>
