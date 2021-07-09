@@ -1,0 +1,12 @@
+.card{
+  margin-bottom: 20px;
+
+}
+.card-title{
+  display: flex;
+  
+}
+.icon{
+  display: flex;
+  float: right;
+}
