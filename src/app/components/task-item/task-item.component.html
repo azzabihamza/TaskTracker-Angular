@@ -1,10 +1,15 @@
-<div class="card">
-  <div class="card-body">
-    <fa-icon class="icon" (click)="onDelete(task)" [ngStyle]="{'color':'red'}" [icon]="faTimes"></fa-icon>
-    <h4 class="card-title">{{ task.text }}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Id : {{ task.id }}</h6>
-  </div>
-  <div class="card-footer text-muted">
-    {{ task.day }}
-  </div>
+<div
+  [ngClass]="{ reminder: task.reminder }"
+  class="task"
+  (dblclick)="onToggle(task)"
+>
+  <h3>
+    {{ task.text }}
+    <fa-icon
+      (click)="onDelete(task)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+    ></fa-icon>
+  </h3>
+  <p>{{ task.day }}</p>
 </div>

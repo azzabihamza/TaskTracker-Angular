@@ -1,12 +1,16 @@
-.card{
-  margin-bottom: 20px;
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
+.task.reminder {
+  border-left: 5px solid green;
 }
-.card-title{
+
+.task h3 {
   display: flex;
-  
-}
-.icon{
-  display: flex;
-  float: right;
+  align-items: center;
+  justify-content: space-between;
 }
